@@ -17,9 +17,9 @@
 		<![endif]-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
     </head>
-    {% block header %}
-    <body>
     
+    {% block header %}
+    <body> 
     	<div class="loader">
     		<div class="strip-holder">
 				<div class="strip-1"></div>
@@ -31,37 +31,46 @@
     	<a id="top"></a>
 				
 		<div class="nav-container">
-						
-				<nav class="overlay-nav">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-2">
-								<a href="index.html">
-									<img alt="Logo" class="logo logo-light" src="{% static 'img/PB_PNG.png' %}">
-                                    <img alt="Logo" class="logo logo-dark" src= "{% static 'img/PB_PNG.png' %}">
-									
-								</a>
-							</div>
-					
-							<div class="col-md-10 text-right">
-								<ul class="menu">
-									<li class="has-dropdown"><a class="inner-link" href="#home" target="default">home</a>
-										<ul class="nav-dropdown">
-											<li><a href="index.html">Register Header</a></li>
-											<li><a href="home-2.html">Video Header</a></li>
-											<li><a href="home-3.html">Countdown Header</a></li>
-											<li><a href="home-4.html">Hero Slider</a></li>
-											<li><a href="home-5.html">Gallery Header</a></li>
-											<li><a href="404.html">404 Page</a></li>
-											<li><a href="500.html">500 Page</a></li>
-										</ul>
-									</li>
-									
-									<li><a class="inner-link" href="#speakers" target="default">sponsors</a></li><li><a class="inner-link" href="cfp.html" target="default">call for proposals</a></li><li><a class="inner-link" href="#pricing" target="default">pricing</a></li><li><a class="inner-link" href="#register" target="default">help needed</a></li>
-                                    <li><a class="inner-link" href="#register" target="default">blog</a></li>
-									<li class="social-link"><a href="#"><i class="icon social_twitter"></i></a></li>
-									<li class="social-link"><a href="#"><i class="icon social_facebook"></i></a></li>
-								</ul>
+            <nav class="overlay-nav">
+                <div class="container">
+				    <div class="row">
+                        <div class="col-md-2">
+				            <a href="index.html">
+				            <img alt="Logo" class="logo logo-light" src="{% static 'img/PB_PNG.png' %}">
+                            <img alt="Logo" class="logo logo-dark" src= "{% static 'img/PB_PNG.png' %}">
+				            </a>
+				        </div>
+					    <div class="col-md-10 text-right">
+				            <ul class="menu">
+								<li class="has-dropdown"><a class="inner-link" href="#home" target="default">home</a>
+								    <ul class="nav-dropdown">
+								        <li><a href="index.html">Register Header</a></li>
+								        <li><a href="home-2.html">Video Header</a></li>
+								        <li><a href="home-3.html">Countdown Header</a></li>
+								        <li><a href="home-4.html">Hero Slider</a></li>
+								        <li><a href="home-5.html">Gallery Header</a></li>
+								        <li><a href="404.html">404 Page</a></li>
+								        <li><a href="500.html">500 Page</a></li>
+								    </ul>
+								</li>
+								<li>
+                                    <a class="inner-link" href="#speakers" target="default">sponsors</a></li>
+                                <li>
+                                    <a class="inner-link" href="cfp.html" target="default">call for proposals</a></li>
+                                <li>
+                                    <a class="inner-link" href="#pricing" target="default">pricing</a>
+                                </li>
+                                <li>
+                                    <a class="inner-link" href="#register" target="default">help needed</a>
+                                </li>
+                                <li>
+                                    <a class="inner-link" href="#register" target="default">blog</a>
+                                </li>
+								<li class="social-link"><a href="#"><i class="icon social_twitter"></i></a>
+                                </li>
+								<li class="social-link"><a href="#"><i class="icon social_facebook"></i></a>
+                                </li>
+				            </ul>
 								<div class="sidebar-menu-toggle"><i class="icon icon_menu"></i></div>
 								<div class="mobile-menu-toggle"><i class="icon icon_menu"></i></div>
 							</div>
