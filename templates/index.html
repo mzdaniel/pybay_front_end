@@ -1,6 +1,37 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block headeroption %}
+		<div class="main-container"><a id="home" class="in-page-link"></a>
+			<section class="hero-slider">
+				<ul class="slides">
+					<li class="video-header">
+						<div class="background-image-holder parallax-background">
+							<img class="background-image" alt="Background Image" src="img/hero1.jpg">
+						</div>
+
+						<div class="video-wrapper">
+							<video autoplay muted loop>
+								<source src="{% static 'video/video.webm' %}" type="video/webm">
+								<source src="{% static 'video/video.mp4' %}" type="video/mp4">
+								<source src="{% static 'video/video.ogv' %}" type="video/ogg">
+							</video>
+						</div>
+
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+									<img alt="logo" class="logo" src="{% static 'img/PB_PNG.png' %}">
+									<span class="uppercase text-white">August 10th to 13th -  San Francisco, California</span>
+                                    <h1 class="text-white large-h1">Bringing together Python's most forward thinking innovators &amp; developers.</h1>
+								</div>
+							</div><!--end of row-->
+						</div><!--end of container-->
+					</li>
+				</ul>
+			</section>
+		</div>
+{% endblock headeroption %}
 {% block content %}
 <!--Event Focus Starts -->
     <a id="about" class="in-page-link"></a>
